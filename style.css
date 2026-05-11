@@ -1,0 +1,357 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+
+  /* WARNA UTAMA */
+  --primary-color: #1b5e20;
+  --secondary-color: #1976d2;
+  --accent-color: #fdd835;
+
+  /* BACKGROUND */
+  --background-main: #f4fff4;
+  --background-card: #ffffff;
+
+  /* TEXT */
+  --text-main: #ffffff;
+  --text-dark: #222222;
+
+  /* SHADOW */
+  --shadow-light: 0 4px 12px rgba(0,0,0,0.08);
+
+  /* BORDER */
+  --radius: 14px;
+}
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: var(--background-main);
+  color: var(--text-dark);
+  line-height:1.7;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+}
+
+.section{
+  padding:80px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title h2{
+  margin-bottom:15px;
+  font-size:2rem;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+  background: var(--primary-color);
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:16px 0;
+}
+
+.logo{
+  color:white;
+  font-size:1.4rem;
+  font-weight:bold;
+}
+
+.nav-menu{
+  display:flex;
+  gap:20px;
+}
+
+.nav-menu a{
+  color:white;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.nav-menu a:hover{
+  color: var(--accent-color);
+}
+
+.hamburger{
+  display:none;
+  color:white;
+  font-size:1.8rem;
+  cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+  padding:80px 0;
+}
+
+.hero-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero-text h1{
+  font-size:3rem;
+  margin-bottom:20px;
+  color:var(--primary-color);
+}
+
+.hero-text p{
+  margin-bottom:20px;
+}
+
+.hero-image img{
+  width:100%;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-light);
+  object-fit:cover;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn-primary,
+.btn-secondary{
+  display:inline-block;
+  padding:14px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  transition:0.3s;
+  margin-top:10px;
+}
+
+.btn-primary{
+  background:var(--primary-color);
+  color:white;
+}
+
+.btn-primary:hover{
+  background:#144218;
+}
+
+.btn-secondary{
+  background:var(--accent-color);
+  color:black;
+}
+
+.btn-secondary:hover{
+  opacity:0.9;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:var(--background-card);
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.target{
+  margin-top:30px;
+  text-align:center;
+}
+
+/* =========================
+   SOLUSI
+========================= */
+
+.solusi-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.solusi-image img{
+  width:100%;
+  border-radius:var(--radius);
+  object-fit:cover;
+}
+
+.manfaat-box{
+  margin-top:20px;
+}
+
+/* =========================
+   FITUR
+========================= */
+
+.fitur-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.fitur-card{
+  background:white;
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.fitur-card:hover{
+  transform:translateY(-5px);
+}
+
+/* =========================
+   AKSES
+========================= */
+
+.akses-section{
+  background:var(--primary-color);
+  color:white;
+  text-align:center;
+}
+
+.akses-buttons{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* =========================
+   TEAM
+========================= */
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+}
+
+.team-card{
+  background:white;
+  padding:25px;
+  border-radius:var(--radius);
+  text-align:center;
+  box-shadow:var(--shadow-light);
+  transition:0.3s;
+}
+
+.team-card:hover{
+  transform:translateY(-5px);
+}
+
+.team-card img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+.footer-text{
+  margin-top:15px;
+}
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal{
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .hero-grid,
+  .solusi-grid{
+    grid-template-columns:1fr;
+  }
+
+  .nav-menu{
+    position:absolute;
+    top:70px;
+    right:0;
+    background:var(--primary-color);
+    width:220px;
+    flex-direction:column;
+    padding:20px;
+    display:none;
+  }
+
+  .nav-menu.show{
+    display:flex;
+  }
+
+  .hamburger{
+    display:block;
+  }
+
+}
